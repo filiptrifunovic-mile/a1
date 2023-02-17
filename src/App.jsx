@@ -13,7 +13,7 @@ import PlacePage from "./pages/PlacePage";
 import BookingsPage from "./pages/BookingsPage";
 import BookingPage from "./pages/BookingPage";
 
-axios.defaults.baseURL = "https://airbnbb-wbge.onrender.com";
+axios.defaults.baseURL = "https://a133.vercel.app";
 axios.defaults.withCredentials = false;
 
 function App() {
