@@ -14,7 +14,7 @@ import BookingsPage from "./pages/BookingsPage";
 import BookingPage from "./pages/BookingPage";
 
 axios.defaults.baseURL = "https://airbnbb-wbge.onrender.com";
-axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = false;
 
 function App() {
   return (
