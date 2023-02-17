@@ -25,7 +25,14 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(
   cors()
 );
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect(process.env.MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+
+  poolSize: 5,
+});
 
 function getUserDataFromToken(req) {
   return new Promise((resolve, reject) => {
