@@ -250,8 +250,8 @@ app.get("/bookings", async (req, res) => {
 });
 
 
-if(4000) {
-  app.listen(4000);
+if (process.env.API_PORT) {
+  app.listen(process.env.API_PORT);
 }
 
 
