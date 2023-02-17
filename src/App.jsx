@@ -15,7 +15,7 @@ import BookingPage from "./pages/BookingPage";
 
 axios.defaults.baseURL = "https://a133.vercel.app";
 
-axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = false;
 
 function App() {
   return (
