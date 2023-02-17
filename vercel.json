@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "./backend/server.js",  // path to your server.js file
+      "src": "./backend/server.js",
       "use": "@vercel/node"
     }
     
